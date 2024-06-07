@@ -59,3 +59,27 @@ main {
 .basket-icon {
     padding: 10px; /* Adjust the padding value as needed */
 }
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer .social-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer .social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+.footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer .social-icons a:hover {
+    color: #ddd;
+}

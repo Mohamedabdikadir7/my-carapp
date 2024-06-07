@@ -52,28 +52,28 @@ function DisplayCars(car) {
 }
 
 // Add event listener to search button
-document.getElementById('searchButton').addEventListener('click', function() {
-    const carName = document.getElementById('carTitle').value;
-    searchCar(carName);
-});
+// document.getElementById('searchButton').addEventListener('click', function() {
+//     const carName = document.getElementById('carTitle').value;
+//     searchCar(carName);
+// });
 
-function searchCar(name) {
-    fetch('http://localhost:3000/cars')
-        .then(res => res.json())
-        .then(cars => {
-            const results = cars.filter(car => car.title.toLowerCase().includes(name.toLowerCase()));
-            displayResults(results);
-        });
-}
+// function searchCar(name) {
+//     fetch('http://localhost:3000/cars')
+//         .then(res => res.json())
+//         .then(cars => {
+//             const results = cars.filter(car => car.title.toLowerCase().includes(name.toLowerCase()));
+//             displayResults(results);
+//         });
+// }
 
-function displayResults(results) {
-    const resultsContainer = document.getElementById('carList');
-    resultsContainer.innerHTML = ''; // Clear previous results
+// function displayResults(results) {
+//     const resultsContainer = document.getElementById('carList');
+//     resultsContainer.innerHTML = ''; // Clear previous results
 
-    if (results.length === 0) {
-        resultsContainer.innerHTML = '<p>No cars found.</p>';
-        return;
-    }
+//     if (results.length === 0) {
+//         resultsContainer.innerHTML = '<p>No cars found.</p>';
+//         return;
+//     }
 
-    results.forEach(DisplayCars);
-}
+//     results.forEach(DisplayCars);
+// }
